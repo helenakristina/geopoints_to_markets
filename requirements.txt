@@ -1,0 +1,7 @@
+configargparse
+geopandas
+pandas
+pyyaml
+shapely
+fiona
+rtree
