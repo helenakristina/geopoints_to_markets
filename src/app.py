@@ -153,7 +153,7 @@ def main():
         result_df.to_csv(output_filepath, index=False)
 
     except Exception as e:
-        log.exception()
+        log.exception(e)
 
 
 if __name__ == "__main__":

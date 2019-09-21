@@ -41,3 +41,8 @@ Also includes Jupyter notebook for running locally step by step, must have all t
   - `docker run --mount type=bind,target=/opt/app/output,source=$PWD/output --rm geopoints_to_markets`
   - Windows: `docker run --mount type=bind,target=/opt/app/output,source=%CD%/output --rm geopoints_to_markets`
 - result file should be in output folder
+
+- Tests:
+- `pip install -r test_requirements.txt`
+- `pytest -vvs tests`
+  

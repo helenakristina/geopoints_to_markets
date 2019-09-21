@@ -12,31 +12,6 @@ import geopandas
 import pandas as pd
 import pytest
 
-columns = [
-    "city",
-    "city_ascii",
-    "state_id_1",
-    "state_name_1",
-    "county_fips",
-    "county_name",
-    "county_fips_all",
-    "county_name_all",
-    "latitude",
-    "longitude",
-    "population",
-    "density",
-    "source",
-    "military",
-    "incorporated",
-    "timezone",
-    "ranking",
-    "zips",
-    "id",
-]
-city_filepath = "tests/data/uscities.csv"
-market_filepath = "tests/data/gz_2010_us_040_00_500k.json"
-separator = ","
-
 
 def test_get_input_dataframe(snapshot):
     columns = [
