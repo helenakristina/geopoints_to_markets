@@ -192,7 +192,7 @@ if __name__ == "__main__":
 
     if os.path.exists(config_file_path):
         with open(config_file_path, "r") as f:
-            config = yaml.load(f.read(), Loader=yaml.FullLoader)
+            config = yaml.load(f.read(), Loader=yaml.SafeLoader)
     global CONFIG
     CONFIG = ChainMap(arguments, os.environ, config, default)
     main()
